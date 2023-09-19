@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,16 +26,67 @@
 <!-- Navigation Bar -->
 	<header id="header">
 		<nav>
-			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<div class="logo"><img src="file:///C:/Users/lucky/OneDrive/Desktop/Logo/Untitled_logo_1_free-file.jpg" alt="logo"></div>
 			<ul>
 				<li><a class="active" href="">Home</a></li>
-				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Career Guidance</a></li>
+				<li><a href="#team_section">Communication Skills</a></li>
+				<li><a href="#team_section">Vocational Skills</a></li>
+				<li><a href="#team_section">Government Schemes</a></li>
+				<li><a href="#team_section">Parental Control</a></li>
+
 				<li><a href="#team_section">Team</a></li>
+
 				<li><a href="#services_section">Services</a></li>
 				<li><a href="#contactus_section">Contact</a></li>
 			</ul>
-			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
-			<a class="get-started" href="login.html">Get Started</a>
+			<div class="dropdown">
+				<button class="dropdown-button">Classes</button>
+				<div class="dropdown-content">
+				  <a class="dropdown-item" href="#">Class 1</a>
+				  <a class="dropdown-item" href="#">Class 2</a>
+				  <a class="dropdown-item" href="#">Class 3</a>
+				  <a class="dropdown-item" href="#">Class 4</a>
+				  <a class="dropdown-item" href="#">Class 5</a>
+				  <a class="dropdown-item" href="#">Class 6</a>
+				  <a class="dropdown-item" href="#">Class 7</a>
+				  <a class="dropdown-item" href="#">Class 8</a>
+				  <a class="dropdown-item" href="#">Class 9</a>
+				  <a class="dropdown-item" href="#">Class 10</a>
+v				  <a class="dropdown-item" href="#">Class 11</a>
+                  <a class="dropdown-item" href="#">Class 12</a>
+				  <a class="dropdown-item" href="#">JEE</a>
+				  <a class="dropdown-item" href="#">NEET</a>
+
+vv
+				 
+				</div>
+			  </div>
+			  
+			  <script>
+			  
+			  document.querySelector(".dropdown-button").addEventListener("click", function() {
+				var dropdownContent = document.querySelector(".dropdown-content");
+				dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+			  });
+			  
+			  
+			  window.addEventListener("click", function(event) {
+				if (!event.target.matches(".dropdown-button")) {
+				  var dropdowns = document.querySelectorAll(".dropdown-content");
+				  for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+					  openDropdown.style.display = "none";
+					}
+				  }
+				}
+			  });
+			  </script>
+
+
+
+
 			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
 		</nav>
 		<div class="head-container">
@@ -56,7 +109,6 @@
 			</div>
 			<ul>
 				<li><a href="#about_section">About</a></li>
-				<li><a href="#portfolio_section">Portfolio</a></li>
 				<li><a href="#team_section">Team</a></li>
 				<li><a href="#services_section">Services</a></li>
 				<li><a href="#contactus_section">Contact</a></li>
@@ -102,25 +154,8 @@
 	</div>
 
 
-<!-- PORTFOLIO -->
-	<div class="diffSection" id="portfolio_section">
-		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
-		<div class="content">
-			<p>
-				“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
-			</p>
-		</div>
-	</div>
-	<div class="extra">
-		<p>We're increasing this data every year</p>
-		<div class="smbox">
-		<span><center><div class="data">154</div><div class="det">Enrolled Students</div></center></span>
-		<span><center><div class="data">62</div><div class="det">Total Courses</div></center></span>
-		<span><center><div class="data">56</div><div class="det">Placed Students</div></center></span>
-		<span><center><div class="data">27</div><div class="det">Total Projects</div></center></span>
-		</div>
-	</div>
 
+		
 
 <!-- TEAM -->
 	<div class="diffSection" id="team_section">
